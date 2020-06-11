@@ -1,0 +1,88 @@
+body
+{
+    background-color:grey
+}
+
+h1
+{
+    text-align:center;
+}
+
+.button_color
+{
+    background:red;
+    border:none;
+    color:white;
+}
+
+.sky {
+    height: 5.5vw;
+    float: left;
+    padding: 10px;
+    background-color: #212121;
+}
+.title {
+    width: 65.75%;
+}
+.push {
+    width: 14.80%;
+}
+
+.center {
+    text-align: center;
+}
+
+.background {
+    float: left;
+    padding: 10px;
+
+}
+
+.left {
+    width: 176px;
+    height: 49vw;
+    background-color: #171717;
+}
+
+.right {
+    width: 88.6%;
+    height: 815px;
+    background-color: #292929;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.button {
+    border: #404040;
+    color: aliceblue;
+    text-align: center;
+    padding: 15px 32px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 4px 2px;
+}
+
+.table {
+    background-color: #171717;
+}
+.login {
+    background-color: #212121;
+}
+
+.skip {
+    color: #171717;
+}
+
+.image {
+    position: absolute;
+    bottom: 0.2%;
+    left: 0.6%;
+}
+
+.nobutton {
+    width: 50.60%;
+}

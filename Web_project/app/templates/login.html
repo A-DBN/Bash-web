@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/_css.css') }}">
+    <link rel="shortcut icon" href="../static/image_site.png">
+    <title>{{title}}</title>
+</head>
+<body leftmargin="0" topmargin="0" rightmargin="0">
+<div class="row">
+    <div class="background left">
+        <button class="button table" onclick=window.location.href='http://127.0.0.1:5000/';>Back</button>
+        <img class="image" src="../static/Epitech.png" width="175" height="60" >
+    </div>
+    <div class="sky no_button center">
+        <h2 style="color: aliceblue"> EPYTODO - LOGIN</h2>
+    </div>
+    <form class="login" method="POST">
+        <center><h2 style="color: aliceblue">Enter informations</h2><br>
+        <input type = "text" cols="25" name="username" placeholder="username" maxlength="40" required autofocus/><br>
+        <input type="text" cols="25" name="password" placeholder="password" maxlength="40" required/> <br>
+        <button class="button login">Connect</button>
+        </center>
+    </form>
+    {% if error %}
+    <center>
+    <p class=error><strong>Erreur:</strong> {{ error }}
+    </center>
+    {% endif %}
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for msg in messages %}
+                <center>
+                <h2><p>{{msg}}</p></h2>
+                </center>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/_css.css') }}">
+    <link rel="shortcut icon" href="../static/image_site.png">
+    <title>{{title}}</title>
+</head>
+<body leftmargin="0" topmargin="0" rightmargin="0">
+<div class="row">
+    <div class="background left">
+        <button class="button table" onclick=window.location.href='http://127.0.0.1:5000/';>Back</button>
+        <img class="image" src="../static/Epitech.png" width="175" height="60" >
+    </div>
+    <div class="sky nobutton center">
+        <h2 style="color: aliceblue">
+            EPYTODO - REGISTER
+        </h2>
+    </div>
+    <form method="POST" action="" class="login">
+        <center><h2 style ="color: aliceblue">Enter informations</h2><br>
+        <input type = "text" cols="25" name="username" placeholder="username" maxlength="255" required/><br>
+        <input type="text" cols="25" name="password" placeholder="password" maxlength="255" required/> <br>
+        <button class="button login"> Register </button>
+    </center>
+    </form>
+</div>
+</body>
+</html>
